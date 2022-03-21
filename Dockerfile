@@ -6,7 +6,7 @@ WORKDIR /home/casauser
 
 ENV PATH="/home/casauser/.local/bin:${PATH}"
 
-RUN apt-get update && apt-get -y install libgfortran3
+RUN apt-get update && apt-get -y install libgfortran
 
 RUN python -m pip install --upgrade pip
 RUN python -m pip install --no-cache jupyterlab
