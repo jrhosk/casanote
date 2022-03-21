@@ -1,6 +1,6 @@
 FROM python:3.6
 
-WORKDIR ${HOME}
+WORKDIR /
 
 RUN python -m pip install --upgrade pip
 RUN python -m pip install --no-cache jupyterlab
