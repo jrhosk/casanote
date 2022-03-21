@@ -1,6 +1,6 @@
 FROM python:3.6
 
-RUN adduser -D casauser
+RUN adduser casauser
 USER casauser
 WORKDIR /home/casauser
 
