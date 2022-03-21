@@ -6,6 +6,8 @@ WORKDIR /home/casauser
 
 ENV PATH="/home/casauser/.local/bin:${PATH}"
 
+RUN apt-get update && apt-get -y install libgfortran3
+
 RUN python -m pip install --upgrade pip
 RUN python -m pip install --no-cache jupyterlab
 RUN python -m pip install matplotlib numpy astropy panel param scipy
